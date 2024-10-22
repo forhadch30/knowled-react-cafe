@@ -1,10 +1,17 @@
 import './App.css'
+import Blogs from './components/Blogs/Blogs';
+import Bookmarks from './components/Bookmarks/Bookmarks';
+import Header from './components/Header/Header'
 function App() {
   return (
     <>
-      <h1 className='text-white font-bold text-4xl bg-green-600'>Knowledge Cafe</h1>
+      <Header></Header>
+      <div className='flex items-center justify-between lg:max-w-6xl mx-auto mt-3 gap-5'>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </>
   )
 }
 
-export default App
+export default App;
